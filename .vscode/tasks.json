@@ -1,0 +1,17 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Z3: Evaluate Current File",
+            "type": "shell",
+            "command": "/home/sage/sage/local/bin/z3 ${file}"
+        },
+        {
+            "label": "Z3: Start REPL",
+            "type": "shell",
+            "command": "/home/sage/sage/local/bin/z3 -in"
+        }
+    ]
+}
