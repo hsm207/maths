@@ -9,9 +9,12 @@ RUN sudo apt update && \
 
 RUN sudo apt install -y graphviz
 RUN sage -pip install --upgrade graphviz \
+    numpy-financial \
     pandas \
     sympy \
     z3-solver 
+
+RUN sage -pip install black nb_black
 
 RUN echo "install.packages('tidyverse', repos='https://cloud.r-project.org')" | \
     R --vanilla
