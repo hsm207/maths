@@ -9,6 +9,7 @@ RUN sudo apt update && \
 
 RUN sudo apt install -y graphviz
 RUN sage -pip install --upgrade graphviz \
+    numpy-financial \
     pandas \
     sympy \
     z3-solver 
